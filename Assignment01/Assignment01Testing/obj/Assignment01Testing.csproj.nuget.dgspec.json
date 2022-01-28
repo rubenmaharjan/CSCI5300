@@ -1,0 +1,140 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/rubenmaharjan/Documents/ETSU/SecondSem/CSCI-5300-SoftwareDesign/Assignments/Assignment01/Assignment01Testing/Assignment01Testing.csproj": {}
+  },
+  "projects": {
+    "/Users/rubenmaharjan/Documents/ETSU/SecondSem/CSCI-5300-SoftwareDesign/Assignments/Assignment01/Assignment01Testing/Assignment01Testing.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/rubenmaharjan/Documents/ETSU/SecondSem/CSCI-5300-SoftwareDesign/Assignments/Assignment01/Assignment01Testing/Assignment01Testing.csproj",
+        "projectName": "Assignment01Testing",
+        "projectPath": "/Users/rubenmaharjan/Documents/ETSU/SecondSem/CSCI-5300-SoftwareDesign/Assignments/Assignment01/Assignment01Testing/Assignment01Testing.csproj",
+        "packagesPath": "/Users/rubenmaharjan/.nuget/packages/",
+        "outputPath": "/Users/rubenmaharjan/Documents/ETSU/SecondSem/CSCI-5300-SoftwareDesign/Assignments/Assignment01/Assignment01Testing/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/rubenmaharjan/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "/Users/rubenmaharjan/Documents/ETSU/SecondSem/CSCI-5300-SoftwareDesign/Assignments/Assignment01/OrchestraLib/OrchestraLib.csproj": {
+                "projectPath": "/Users/rubenmaharjan/Documents/ETSU/SecondSem/CSCI-5300-SoftwareDesign/Assignments/Assignment01/OrchestraLib/OrchestraLib.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "MSTest.TestAdapter": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.5.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[1.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/6.0.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/rubenmaharjan/Documents/ETSU/SecondSem/CSCI-5300-SoftwareDesign/Assignments/Assignment01/OrchestraLib/OrchestraLib.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/rubenmaharjan/Documents/ETSU/SecondSem/CSCI-5300-SoftwareDesign/Assignments/Assignment01/OrchestraLib/OrchestraLib.csproj",
+        "projectName": "OrchestraLib",
+        "projectPath": "/Users/rubenmaharjan/Documents/ETSU/SecondSem/CSCI-5300-SoftwareDesign/Assignments/Assignment01/OrchestraLib/OrchestraLib.csproj",
+        "packagesPath": "/Users/rubenmaharjan/.nuget/packages/",
+        "outputPath": "/Users/rubenmaharjan/Documents/ETSU/SecondSem/CSCI-5300-SoftwareDesign/Assignments/Assignment01/OrchestraLib/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/rubenmaharjan/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/6.0.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

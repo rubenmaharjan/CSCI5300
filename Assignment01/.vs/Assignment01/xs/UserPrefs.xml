@@ -1,0 +1,32 @@
+﻿<Properties StartupConfiguration="{612301DE-30E6-4482-ACE5-E8F27D6482AC}|Default">
+  <MonoDevelop.Ide.ItemProperties.Assignment01Testing PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="OrchestraListWeb/Controllers/HomeController.cs">
+    <Files>
+      <File FileName="OrchestraLib/Orchestra.cs" Line="75" Column="2" />
+      <File FileName="OrchestraListConsole/Program.cs" />
+      <File FileName="OrchestraListWeb/Controllers/HomeController.cs" Line="25" Column="55" />
+      <File FileName="OrchestraListWeb/Views/_ViewStart.cshtml" />
+      <File FileName="OrchestraListWeb/Views/_ViewImports.cshtml" />
+      <File FileName="OrchestraListWeb/Views/Home/Index.cshtml" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Assignment01" expanded="True" selected="True">
+            <Node name="OrchestraListWeb" expanded="True">
+              <Node name="Controllers" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.OrchestraListConsole PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.OrchestraListWeb PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
