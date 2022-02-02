@@ -64,5 +64,27 @@ namespace OrchestraLib
                 return null;
             }
         }
+
+        public void Create(Orchestra orchestra)
+        {
+            string query = "INSERT INTO dbo.Orchestra (Name, AddressLine1, AddressLine2, City, State, ZipCode, WebsiteURL) VALUES " + 
+                            "(@Name, @AddressLine1, @AddressLine2, @City, @State, @ZipCode, @WebsiteURL);";
+            SqlCommand command = new SqlCommand(query, _conn);
+            command.Parameters.AddWithValue("@Name", orchestra.Name);
+            command.Parameters.AddWithValue("@AddressLine1", orchestra.AddressLine1);
+            command.Parameters.AddWithValue("@AddressLine2", orchestra.AddressLine2);
+            command.Parameters.AddWithValue("@City", orchestra.City);
+            command.Parameters.AddWithValue("@State", orchestra.State);
+            command.Parameters.AddWithValue("@ZipCode", orchestra.ZipCode);
+            command.Parameters.AddWithValue("@WebsiteURL", orchestra.WebsiteURL);
+            try
+            {
+                command.ExecuteNonQuery();
+                Console.WriteLine("Record Inserted!");
+            } catch (SqlException error)
+            {
+                Console.WriteLine("Error!!! Details:", error.ToString());
+            }
+        }
     }
 }

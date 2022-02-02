@@ -1,21 +1,34 @@
 ﻿<Properties StartupConfiguration="{CF14AECB-8E26-4269-A8B0-89BB72E01B4F}|Default">
   <MonoDevelop.Ide.ItemProperties.OrchestraApp PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="OrchestraLib/SqlOrchestraRepository.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="OrchestraApp/Program.cs">
     <Files>
       <File FileName="OrchestraLib/Orchestra.cs" Line="64" Column="1" />
-      <File FileName="OrchestraLib/IOrchestraRepository.cs" />
-      <File FileName="OrchestraLib/SqlOrchestraRepository.cs" Line="63" Column="28" />
-      <File FileName="OrchestraApp/Program.cs" />
-      <File FileName="Assignment02Testing/UnitTest1.cs" />
+      <File FileName="OrchestraLib/IOrchestraRepository.cs" Line="7" Column="5" />
+      <File FileName="OrchestraLib/SqlOrchestraRepository.cs" Line="66" Column="1" />
+      <File FileName="OrchestraApp/Program.cs" Line="57" Column="57" />
+      <File FileName="Assignment02Testing/UnitTest1.cs" Line="22" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Assignment02" expanded="True">
             <Node name="Assignment02Testing" expanded="True" />
-            <Node name="OrchestraApp" expanded="True" />
-            <Node name="OrchestraLib" expanded="True">
-              <Node name="SqlOrchestraRepository.cs" selected="True" />
+            <Node name="OrchestraApp" expanded="True">
+              <Node name="Program.cs" selected="True" />
+            </Node>
+            <Node name="OrchestraLib" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="Assignment02" expanded="True">
+            <Node name="Assignment02Testing" expanded="True">
+              <Node name="Assignment02Testing" expanded="True">
+                <Node name="AnOrchestraRepository" expanded="True">
+                  <Node name="CanHandleNull" selected="True" />
+                </Node>
+              </Node>
             </Node>
           </Node>
         </State>
@@ -26,9 +39,7 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/rubenmaharjan/Documents/ETSU/SecondSem/CSCI-5300-SoftwareDesign/Assignments/Assignment02/OrchestraApp/Program.cs" relfile="OrchestraApp/Program.cs" line="27" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

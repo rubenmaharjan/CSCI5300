@@ -15,6 +15,14 @@ namespace Assignment02Testing
         }
 
         [TestMethod]
+        public void CanHandleNull()
+        {
+            IOrchestraRepository sut = new SqlOrchestraRepository();
+            Orchestra result = sut.Read(0);
+            Assert.IsNull(result);
+        }
+
+        [TestMethod]
         public void IsAnInstanceOfOrchestra()
         {
             IOrchestraRepository sut = new SqlOrchestraRepository();

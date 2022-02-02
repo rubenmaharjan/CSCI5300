@@ -7,5 +7,6 @@ namespace OrchestraLib
     {
         ICollection<Orchestra> ReadAll();
         Orchestra Read(int id);
+        void Create(Orchestra orchestra);
     }
 }

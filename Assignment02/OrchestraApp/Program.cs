@@ -8,10 +8,12 @@ namespace OrchestraListConsole
     {
         static void MainMenu()
         {
+            Console.WriteLine("\n");
             Console.WriteLine("Main Menu");
             Console.WriteLine("===========");
             Console.WriteLine("1. Show Orchestras");
             Console.WriteLine("2. View Orchestras");
+            Console.WriteLine("3. Create Orchestras");
             Console.WriteLine("E. Exit");
             Console.Write("Make a selection : ");
             char mm_selcetion = Console.ReadLine()[0];
@@ -27,6 +29,10 @@ namespace OrchestraListConsole
                     ViewOrchestras(id);
                     MainMenu();
                     break;
+                case '3':
+                    CreateOrchestra();
+                    MainMenu();
+                    break;
                 case 'E':
                 case 'e':
                     break;
@@ -39,6 +45,29 @@ namespace OrchestraListConsole
             return;
         }
 
+        static void CreateOrchestra()
+        {
+            Orchestra orchestra = new Orchestra();
+            Console.WriteLine("\n");
+            Console.Write("Enter the Name           : ");
+            orchestra.Name = Console.ReadLine();
+            Console.Write("Enter the Address Line 1 : ");
+            orchestra.AddressLine1 = Console.ReadLine();
+            Console.Write("Enter the Address Line 2 : ");
+            orchestra.AddressLine2 = Console.ReadLine();
+            Console.Write("Enter the City           : ");
+            orchestra.City = Console.ReadLine();
+            Console.Write("Enter the State          : ");
+            orchestra.State = Console.ReadLine();
+            Console.Write("Enter the Zip Code       : ");
+            orchestra.ZipCode = Console.ReadLine();
+            Console.Write("Enter the URL            : ");
+            orchestra.WebsiteURL = Console.ReadLine();
+
+            IOrchestraRepository orchestra_repo = new SqlOrchestraRepository();
+            orchestra_repo.Create(orchestra);
+        }
+
         static void ViewOrchestras(int id)
         {
             IOrchestraRepository orchestra_repo = new SqlOrchestraRepository();
@@ -49,6 +78,7 @@ namespace OrchestraListConsole
             }
             else
             {
+                Console.WriteLine("\n");
                 Console.WriteLine("Id            :" + orchestra.Id);
                 Console.WriteLine("Name          :" + orchestra.Name);
                 Console.WriteLine("Address Line 1:" + orchestra.AddressLine1);
@@ -59,10 +89,12 @@ namespace OrchestraListConsole
                 Console.WriteLine("URL           :" + orchestra.WebsiteURL);
             }
         }
+
         static void ShowOrchestras()
         {
             IOrchestraRepository orchestra_repo = new SqlOrchestraRepository();
             var results = orchestra_repo.ReadAll();
+            Console.WriteLine("\n");
             Console.WriteLine("\tId  Name");
             Console.WriteLine("----- ---------------------------");
             foreach (Orchestra orchestra in results)
