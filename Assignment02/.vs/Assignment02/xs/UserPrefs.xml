@@ -1,35 +1,22 @@
 ﻿<Properties StartupConfiguration="{CF14AECB-8E26-4269-A8B0-89BB72E01B4F}|Default">
   <MonoDevelop.Ide.ItemProperties.OrchestraApp PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="OrchestraLib/SqlOrchestraRepository.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="OrchestraApp/Program.cs">
     <Files>
-      <File FileName="OrchestraLib/Orchestra.cs" Line="64" Column="1" />
-      <File FileName="OrchestraLib/IOrchestraRepository.cs" Line="11" Column="14" />
-      <File FileName="OrchestraLib/SqlOrchestraRepository.cs" Line="19" Column="19" />
-      <File FileName="OrchestraApp/Program.cs" Line="52" Column="21" />
-      <File FileName="Assignment02Testing/UnitTest1.cs" Line="59" Column="56" />
+      <File FileName="OrchestraLib/Orchestra.cs" Line="76" Column="1" />
+      <File FileName="OrchestraLib/IOrchestraRepository.cs" />
+      <File FileName="OrchestraLib/SqlOrchestraRepository.cs" />
+      <File FileName="OrchestraApp/Program.cs" Line="20" Column="29" />
+      <File FileName="Assignment02Testing/UnitTest1.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Assignment02" expanded="True">
             <Node name="Assignment02Testing" expanded="True" />
-            <Node name="OrchestraApp" expanded="True" />
-            <Node name="OrchestraLib" expanded="True">
-              <Node name="SqlOrchestraRepository.cs" selected="True" />
+            <Node name="OrchestraApp" expanded="True">
+              <Node name="Program.cs" selected="True" />
             </Node>
-          </Node>
-        </State>
-      </Pad>
-      <Pad Id="MonoDevelop.UnitTesting.TestPad">
-        <State name="__root__">
-          <Node name="Assignment02" expanded="True">
-            <Node name="Assignment02Testing" expanded="True">
-              <Node name="Assignment02Testing" expanded="True">
-                <Node name="AnOrchestraRepository" expanded="True">
-                  <Node name="CanUpdateOrchestra" selected="True" />
-                </Node>
-              </Node>
-            </Node>
+            <Node name="OrchestraLib" expanded="True" />
           </Node>
         </State>
       </Pad>
