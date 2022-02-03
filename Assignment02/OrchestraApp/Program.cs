@@ -14,8 +14,10 @@ namespace OrchestraListConsole
             Console.WriteLine("1. Show Orchestras");
             Console.WriteLine("2. View Orchestras");
             Console.WriteLine("3. Create Orchestras");
+            Console.WriteLine("4. Update Orchestras");
+            Console.WriteLine("5. Delete Orchestras");
             Console.WriteLine("E. Exit");
-            Console.Write("Make a selection : ");
+            Console.Write("\nMake a selection : ");
             char mm_selcetion = Console.ReadLine()[0];
             switch (mm_selcetion) 
             {
@@ -24,7 +26,7 @@ namespace OrchestraListConsole
                     MainMenu();
                     break;
                 case '2':
-                    Console.Write("Enter the id : ");
+                    Console.Write("\nEnter the id to View : ");
                     int id = Convert.ToInt32(Console.ReadLine());
                     ViewOrchestras(id);
                     MainMenu();
@@ -33,8 +35,21 @@ namespace OrchestraListConsole
                     CreateOrchestra();
                     MainMenu();
                     break;
+                case '4':
+                    Console.Write("\nEnter the id  to Update: ");
+                    int update_id = Convert.ToInt32(Console.ReadLine());
+                    UpdateOrchestra(update_id);
+                    MainMenu();
+                    break;
+                case '5':
+                    Console.Write("\nEnter the id  to Delete: ");
+                    int delete_id = Convert.ToInt32(Console.ReadLine());
+                    DeleteOrchestra(delete_id);
+                    MainMenu();
+                    break;
                 case 'E':
                 case 'e':
+                    Console.Write("\nThank You!");
                     break;
                 default:
                     Console.WriteLine("Invalid selection. Please reenter");
@@ -43,6 +58,49 @@ namespace OrchestraListConsole
 
             }
             return;
+        }
+
+        static void DeleteOrchestra(int id)
+        {
+            IOrchestraRepository orchestra_repo = new SqlOrchestraRepository();
+            orchestra_repo.Delete(id);
+        }
+
+        static string ReadOrNot(Orchestra orchestra, string property)
+        {
+            string read_line = Console.ReadLine();
+            return !string.IsNullOrEmpty(read_line) ? read_line :
+                Convert.ToString(orchestra.GetType().GetProperty(property).GetValue(orchestra, null));
+
+        }
+
+        static void UpdateOrchestra(int id)
+        {
+            IOrchestraRepository orchestra_repo = new SqlOrchestraRepository();
+            Orchestra orchestra = orchestra_repo.Read(id);
+            if (orchestra == null)
+            {
+                Console.WriteLine("Id Not Found.");
+            }
+            else
+            {
+                Console.WriteLine("\n");
+                Console.Write("Enter the Name           : ");
+                orchestra.Name = ReadOrNot(orchestra, "Name");
+                Console.Write("Enter the Address Line 1 : ");
+                orchestra.AddressLine1 = ReadOrNot(orchestra, "AddressLine1");
+                Console.Write("Enter the Address Line 2 : ");
+                orchestra.AddressLine2 = ReadOrNot(orchestra, "AddressLine2");
+                Console.Write("Enter the City           : ");
+                orchestra.City = ReadOrNot(orchestra, "City");
+                Console.Write("Enter the State          : ");
+                orchestra.State = ReadOrNot(orchestra, "State");
+                Console.Write("Enter the Zip Code       : ");
+                orchestra.ZipCode = ReadOrNot(orchestra, "ZipCode");
+                Console.Write("Enter the URL            : ");
+                orchestra.WebsiteURL = ReadOrNot(orchestra, "WebsiteURL");
+                orchestra_repo.Update(orchestra);
+            }
         }
 
         static void CreateOrchestra()
