@@ -1,37 +1,38 @@
 ﻿using System;
 using System.Net.Sockets;
+using System.Runtime.Serialization.Formatters.Binary;
+using OrchestraLib;
 
-namespace QuoteClientApp
+namespace ClientApp
 {
-    public class QuoteTCPClient
+    public class QuoteTCPClient: TCPClient
     {
-        private TcpClient _client;
 
         public QuoteTCPClient()
         {
         }
 
         public QuoteTCPClient(string hostName, int port=11000)
+            :base(hostName, port)
         {
-            _client = new TcpClient(hostName, port);
         }
 
-        public void Close()
+        public override void Recieve()
         {
-            try {
-                _client.Close();
-            } catch (SocketException e)
+            try
             {
-                Console.WriteLine("Socket Erro : ", e.ToString());
-            }
-        }
+                byte[] data = new byte[256];
+                NetworkStream networkStream = _client.GetStream();
 
-        public void Send(string request)
-        {
-            request += "<END>";
-            Byte[] data = System.Text.Encoding.UTF8.GetBytes(request);
-            NetworkStream networkStream = _client.GetStream();
-            networkStream.Write(data, 0, data.Length);
+                // Read the first batch of the TcpServer response bytes.
+                Int32 bytes = networkStream.Read(data, 0, data.Length);
+                string responseData = System.Text.Encoding.UTF8.GetString(data, 0, bytes);
+                Console.WriteLine("Received: {0}", responseData);
+            } catch (Exception e)
+            {
+                Console.WriteLine("Exception in recieving: ", e.ToString());
+            }
+
         }
     }
 }

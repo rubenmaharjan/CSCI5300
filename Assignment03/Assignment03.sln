@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.810.17
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuoteServerApp", "QuoteServerApp\QuoteServerApp.csproj", "{0105015B-8A6B-48E1-92B4-619E37DFE785}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServerApp", "QuoteServerApp\ServerApp.csproj", "{0105015B-8A6B-48E1-92B4-619E37DFE785}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuoteClientApp", "QuoteClientApp\QuoteClientApp.csproj", "{EF9DB712-704C-473B-B663-F8CF22A4BCD9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientApp", "QuoteClientApp\ClientApp.csproj", "{EF9DB712-704C-473B-B663-F8CF22A4BCD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrchestraLib", "OrchestraLib\OrchestraLib.csproj", "{00B047F6-4528-4132-A7F3-ECAE72DEBA5F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{EF9DB712-704C-473B-B663-F8CF22A4BCD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF9DB712-704C-473B-B663-F8CF22A4BCD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF9DB712-704C-473B-B663-F8CF22A4BCD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00B047F6-4528-4132-A7F3-ECAE72DEBA5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00B047F6-4528-4132-A7F3-ECAE72DEBA5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00B047F6-4528-4132-A7F3-ECAE72DEBA5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00B047F6-4528-4132-A7F3-ECAE72DEBA5F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

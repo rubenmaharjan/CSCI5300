@@ -1,28 +1,30 @@
 ﻿<Properties StartupConfiguration="{0105015B-8A6B-48E1-92B4-619E37DFE785}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="QuoteClientApp/QuoteTCPClient.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="QuoteServerApp/TCPServer.cs">
     <Files>
-      <File FileName="QuoteServerApp/Program.cs" Line="16" Column="13" />
-      <File FileName="QuoteServerApp/MenuClass.cs" Line="10" Column="15" />
-      <File FileName="QuoteClientApp/Program.cs" Line="21" Column="13" />
-      <File FileName="QuoteServerApp/QuoteTCPServer.cs" Line="19" Column="16" />
-      <File FileName="QuoteClientApp/QuoteTCPClient.cs" Line="7" Column="1" />
+      <File FileName="QuoteServerApp/Program.cs" Line="26" Column="27" />
+      <File FileName="QuoteServerApp/TCPServer.cs" Line="44" Column="1" />
+      <File FileName="QuoteServerApp/QuoteTCPServer.cs" />
+      <File FileName="QuoteServerApp/OrchestraServer.cs" />
+      <File FileName="QuoteClientApp/Program.cs" />
+      <File FileName="QuoteClientApp/QuoteTCPClient.cs" />
+      <File FileName="QuoteClientApp/TCPClient.cs" />
+      <File FileName="QuoteClientApp/OrchestraClient.cs" />
+      <File FileName="QuoteServerApp/MenuClass.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Assignment03" expanded="True">
-            <Node name="QuoteClientApp" expanded="True">
-              <Node name="QuoteTCPClient.cs" selected="True" />
-            </Node>
-            <Node name="QuoteServerApp" expanded="True" />
+            <Node name="ClientApp" expanded="True" />
+            <Node name="OrchestraLib" expanded="True" />
+            <Node name="ServerApp" expanded="True" selected="True" />
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.QuoteClientApp FirstBuild="True" />
-  <MonoDevelop.Ide.ItemProperties.QuoteServerApp FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.ServerApp PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

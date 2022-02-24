@@ -6,6 +6,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\QuoteServerApp\QuoteServerApp.csproj" />
+    <ProjectReference Include="..\OrchestraLib\OrchestraLib.csproj" />
   </ItemGroup>
 </Project>

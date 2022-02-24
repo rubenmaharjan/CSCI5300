@@ -1,5 +1,6 @@
 ﻿using System;
-namespace QuoteServerApp
+
+namespace ServerApp
 {
     public class MenuClass
     {
