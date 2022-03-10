@@ -1,0 +1,41 @@
+﻿<Properties StartupConfiguration="{E9A00C9E-A24E-4072-927D-7BFE8F299AEA}|Default">
+  <MonoDevelop.Ide.ItemProperties.Client PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="BrokerServer/BrokerServer.cs">
+    <Files>
+      <File FileName="QuoteServer/Program.cs" Line="7" Column="10" IsPinned="True" />
+      <File FileName="Client/Program.cs" Line="98" Column="40" />
+      <File FileName="BrokerServer/Program.cs" Line="19" Column="25" />
+      <File FileName="Client/Client.cs" Line="40" Column="44" />
+      <File FileName="QuoteServer/QuoteServer.cs" Line="1" Column="1" />
+      <File FileName="BrokerServer/BrokerServer.cs" Line="93" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Assignment04" expanded="True">
+            <Node name="Broker" expanded="True" />
+            <Node name="BrokerServer" expanded="True">
+              <Node name="BrokerServer.cs" selected="True" />
+            </Node>
+            <Node name="Client" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="ProjectDependencies" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="OrchestraLib" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+            </Node>
+            <Node name="OrchestraServer" expanded="True" />
+            <Node name="QuoteServer" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
